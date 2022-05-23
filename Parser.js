@@ -71,6 +71,12 @@ function ViewState(inBase64) {
       this.pushComponent("SHA1", "SHA1");
     else if(16 == n)
       this.pushComponent("MD5", "MD5");
+    else if(32 == n)
+      this.pushComponent("HMACSHA256", "HMACSHA256");
+    else if(48 == n)
+      this.pushComponent("HMACSHA384", "HMACSHA384");
+    else if(64 == n)
+      this.pushComponent("HMACSHA512", "HMACSHA512");
   }
 
   this.parse = function() {
