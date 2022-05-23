@@ -19,7 +19,6 @@ var secrets = ["BEGIN DSA PRIVATE KEY",
 "(?<=:\/\/)[a-zA-Z0-9]+:[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]+",
 "bearer [a-zA-Z0-9_\\-\\.=]+",
 "basic [a-zA-Z0-9_\\-:\\.=]+",
-"[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)",
 "\b(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}\b"];
 
 
@@ -63,7 +62,7 @@ if(element != null){
     var re = new RegExp(secrets[s]);
     var regexTest = re.test(viewstateRAW);
     if(regexTest == true){
-      //alert("Found secret in Viewstate!");
+      alert("Found secret in Viewstate!");
       console.log("Found secret in viewstate matching: " + secrets[s]);
     }
   }
