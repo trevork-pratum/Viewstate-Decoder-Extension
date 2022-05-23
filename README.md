@@ -2,7 +2,7 @@
  A Chrome extension to detect, notify, and decode Viewstate variables within the HTML of a page.
 
 # How to Install and Use
- To install, clone the repo into an empty folder. Open chrome://extensions, select "Load unpacked", and select the folder where the repo was cloned into.
+ To install, clone the repo into an empty folder. Open [chrome://extensions](chrome://extensions), select "Load unpacked", and select the folder where the repo was cloned into.
  To use, the extension will place a red HTML div at the top of any page with a detected Viewstate within the HTML (even if it is empty). On the page, you can click on the extension and get the base64 (raw) value, copy it to your clipboard, or decode it.
 
 # Permissions
